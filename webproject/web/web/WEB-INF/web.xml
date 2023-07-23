@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+    <context-param>
+        <param-name>key1</param-name>
+        <param-value>BJSXT</param-value>
+    </context-param>
+    <context-param>
+        <param-name>key2</param-name>
+        <param-value>BJSXT</param-value>
+    </context-param>
+    <servlet>
+        <servlet-name>helloWorld</servlet-name>
+        <servlet-class>itbaizhan.HelloWorld</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>helloWorld</servlet-name>
+        <url-pattern>/helloworld.do</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>getRequestInfoServlet</servlet-name>
+        <servlet-class>itbaizhan.GetRequestInfoServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>getRequestInfoServlet</servlet-name>
+        <url-pattern>/suibian/*</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>getRequestDataServlet</servlet-name>
+        <servlet-class>itbaizhan.GetRequestDataServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>getRequestDataServlet</servlet-name>
+        <url-pattern>/getRequestData.do</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>getRequestHeaderServlet</servlet-name>
+        <servlet-class>itbaizhan.GetRequestHeaderServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>getRequestHeaderServlet</servlet-name>
+        <url-pattern>/getRequestHeader.do</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>languageExampleServlet</servlet-name>
+        <servlet-class>itbaizhan.LanguageExampleServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>languageExampleServlet</servlet-name>
+        <url-pattern>/language.do</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>requestCharacterServlet</servlet-name>
+        <servlet-class>itbaizhan.ResponseCharacterServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>requestCharacterServlet</servlet-name>
+        <url-pattern>/character.do</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>responseByteServlet</servlet-name>
+        <servlet-class>itbaizhan.ResponseByteServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>responseByteServlet</servlet-name>
+        <url-pattern>/byte.do</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>redirectServlet</servlet-name>
+        <servlet-class>itbaizhan.RedirectServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>redirectServlet</servlet-name>
+        <url-pattern>/redirect.do</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>fileDownServlet</servlet-name>
+        <servlet-class>itbaizhan.FileDownServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>fileDownServlet</servlet-name>
+        <url-pattern>/filedown.do</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>getBaseInfoServlet</servlet-name>
+        <servlet-class>itbaizhan.GetBaseInfoServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>getBaseInfoServlet</servlet-name>
+        <url-pattern>/getBaseInfo.do</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>contextReaderInfoServlet</servlet-name>
+        <servlet-class>itbaizhan.ContextReadInfoServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>contextReaderInfoServlet</servlet-name>
+        <url-pattern>/readInfo.do</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>globalContainerServlet</servlet-name>
+        <servlet-class>itbaizhan.GlobalContainerServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>globalContainerServlet</servlet-name>
+        <url-pattern>/global.do</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>getConfigServlet</servlet-name>
+        <servlet-class>itbaizhan.GetConfigServlet</servlet-class>
+        <init-param>
+            <param-name>key</param-name>
+            <param-value>BJSXT</param-value>
+        </init-param>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>getConfigServlet</servlet-name>
+        <url-pattern>/getConfig.do</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>createCookieServlet</servlet-name>
+        <servlet-class>itbaizhan.CreateCookieServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>createCookieServlet</servlet-name>
+        <url-pattern>/cookie.do</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>getCookieDataServlet</servlet-name>
+        <servlet-class>itbaizhan.GetCookieDataServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>getCookieDataServlet</servlet-name>
+        <url-pattern>/getCookie.do</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>welcomeServlet</servlet-name>
+        <servlet-class>itbaizhan.WelcomServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>welcomeServlet</servlet-name>
+        <url-pattern>/welcome.do</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>createHttpSessionServlet</servlet-name>
+        <servlet-class>itbaizhan.CreateHttpSessionServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>createHttpSessionServlet</servlet-name>
+        <url-pattern>/createSession.do</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>getHttpSessionDataServlet</servlet-name>
+        <servlet-class>itbaizhan.GetHttpSessionDataServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>getHttpSessionDataServlet</servlet-name>
+        <url-pattern>/getSessionData.do</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>welcomeSessionServlet</servlet-name>
+        <servlet-class>itbaizhan.WelcomeSessionServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>welcomeSessionServlet</servlet-name>
+        <url-pattern>/welcomeSession.do</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>autoStartServlet</servlet-name>
+        <servlet-class>itbaizhan.AutoStartServlet</servlet-class>
+        <init-param>
+            <param-name>path</param-name>
+            <param-value>image</param-value>
+        </init-param>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>autoStartServlet</servlet-name>
+        <url-pattern>/autoStart.do</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>threadSafeServlet</servlet-name>
+        <servlet-class>itbaizhan.ThreadSafeServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>threadSafeServlet</servlet-name>
+        <url-pattern>/safe.do</url-pattern>
+    </servlet-mapping>
+
+    <filter>
+        <filter-name>firstFilter</filter-name>
+        <filter-class>itbaizhan.filter.FirstFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>firstFilter</filter-name>
+        <url-pattern>/suibian/*</url-pattern>
+    </filter-mapping>
+
+    <filter>
+        <filter-name>encodingFilter</filter-name>
+        <filter-class>itbaizhan.filter.EncodingFilter</filter-class>
+        <init-param>
+            <param-name>code</param-name>
+            <param-value>utf-8</param-value>
+        </init-param>
+
+    </filter>
+    <filter-mapping>
+        <filter-name>encodingFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+
+    <listener>
+        <listener-class>itbaizhan.listener.ServletContextLifecycleListener</listener-class>
+    </listener>
+
+    <listener>
+        <listener-class>itbaizhan.listener.ServletContextAttrListener</listener-class>
+    </listener>
+
+    <listener>
+        <listener-class>itbaizhan.listener.HttpSessionLifecycleListener</listener-class>
+    </listener>
+
+    <listener>
+        <listener-class>itbaizhan.listener.HttpSessionAttrListener</listener-class>
+    </listener>
+
+    <listener>
+        <listener-class>itbaizhan.listener.HttpServletRequestLifecycleListener</listener-class>
+    </listener>
+
+    <listener>
+        <listener-class>itbaizhan.listener.HttpServletRequestAttrListener</listener-class>
+    </listener>
+    <session-config>
+        <session-timeout>1</session-timeout>
+    </session-config>
+</web-app>
